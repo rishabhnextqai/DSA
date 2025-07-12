@@ -365,7 +365,11 @@ JOURNEY = [
 
 # --- SIDEBAR NAVIGATION ---
 st.sidebar.markdown("# 🧭 Navigate")
-page = st.sidebar.radio("", ["Dashboard", "This Week", "Full Plan", "Settings"])
+# page = st.sidebar.radio("", ["Dashboard", "This Week", "Full Plan", "Settings"])
+page = st.sidebar.radio(
+    "Navigate to", 
+    ["Dashboard", "This Week", "Full Plan", "Settings"]
+)
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Tip:** _" + random.choice([
     "Code like it's poetry.",
